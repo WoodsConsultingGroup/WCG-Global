@@ -73,7 +73,12 @@
     .case-testimonial-quote { font-family: 'Cormorant Garamond', serif; font-size: 17px; font-style: italic; color: var(--navy); line-height: 1.7; margin-bottom: 0.5rem; }
     .case-testimonial-attr { font-size: 12px; color: var(--lgray); font-weight: 500; }
     @media (max-width: 768px) { .case-columns, .case-outcome-grid { grid-template-columns: 1fr; } .case-meta-row { flex-direction: column; gap: 1rem; } }
-    .testimonials-bg { background: var(--light); padding: 5rem 2rem; }
+    .brochure-cta { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-top: 2rem; padding: 1.75rem 2rem; background: var(--light); border: 1px solid var(--border); border-radius: 10px; flex-wrap: wrap; }
+    .brochure-cta-title { font-size: 15px; font-weight: 500; color: var(--navy); margin-bottom: 0.4rem; }
+    .brochure-cta-sub { font-size: 13px; color: var(--gray); line-height: 1.7; max-width: 520px; }
+    .btn-download { padding: 12px 24px; background: var(--navy); color: var(--white); font-size: 13px; font-weight: 500; border-radius: 4px; text-decoration: none; white-space: nowrap; flex-shrink: 0; }
+    .btn-download:hover { opacity: 0.88; }
+    @media (max-width: 768px) { .brochure-cta { flex-direction: column; align-items: flex-start; } }
     .testimonials-inner { max-width: 1100px; margin: 0 auto; }
     .testimonials-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 2.5rem; }
     .testimonial-card { background: var(--white); border: 1px solid var(--border); border-radius: 10px; padding: 1.75rem; }
@@ -195,14 +200,18 @@
   <h2>We Meet You Where You Are. We Build What You Need.</h2>
   <p class="section-sub">Every engagement starts with where your business actually is — then we build what gets you to the next level.</p>
   <div class="services-grid">
-    <div class="service-card"><div class="service-num">01 — Business Development Strategy</div><div class="service-title">Growth by Design, Not Accident</div><div class="service-price">$2,000–$3,500/month</div><div class="service-body">Market positioning, offer architecture, partnership development, and BD systems that create consistent, high-quality pipeline.</div></div>
-    <div class="service-card"><div class="service-num">02 — Operational Excellence &amp; Scaling</div><div class="service-title">Build the Machine Behind the Business</div><div class="service-price">Starting at $3,500</div><div class="service-body">Operational audits, SOP development, team structure, financial oversight, and strategic planning that lets leadership move fast.</div></div>
-    <div class="service-card"><div class="service-num">03 — Startup Launch Package</div><div class="service-title">Start Right. Build to Last.</div><div class="service-price">Starting at $1,500</div><div class="service-body">LLC formation, EIN, agency registrations, operational baseline, brand foundation, and your 90-day launch roadmap.</div></div>
-    <div class="service-card"><div class="service-num">04 — Compliance &amp; Workforce Risk</div><div class="service-title">Compliance as Competitive Advantage</div><div class="service-price">$2,000–$5,000/month</div><div class="service-body">Payroll tax, multi-jurisdictional requirements, HR integration, and workforce risk management. ADP, SAP, Oracle fluent.</div></div>
-    <div class="service-card"><div class="service-num">05 — Payroll Tax &amp; Strategic Advisory</div><div class="service-title">Complexity Managed. Risk Reduced.</div><div class="service-price">$8,000–$15,000/month</div><div class="service-body">Multi-jurisdictional reconciliations, notice resolution, audit readiness, and compliance aligned with growth strategy.</div></div>
-    <div class="service-card"><div class="service-num">06 — Payroll Processing</div><div class="service-title">Expert Oversight on Every Cycle</div><div class="service-price">Starting at $400/month + software fee</div><div class="service-body">Full payroll processing with compliance checks built in. Setup: 1–5 employees $250 &nbsp;|&nbsp; 6–15 $500 &nbsp;|&nbsp; 16–25 $750 &nbsp;|&nbsp; 26+ custom.</div></div>
-    <div class="service-card"><div class="service-num">07 — Creator Business Advisory</div><div class="service-title">Your Platform Is a Business. Run It Like One.</div><div class="service-price">$500–$1,500/month</div><div class="service-body">Business structuring, payment frameworks, contract navigation, tax strategy, and operational systems for content creators.</div></div>
-    <div class="service-card"><div class="service-num">08 — Scale &amp; Optimize Enterprise</div><div class="service-title">Executive Strategy at Scale</div><div class="service-price">$7,500–$15,000/month</div><div class="service-body">Full operational excellence, fractional COO advisory, strategic planning, and board-level reporting for mid-market companies.</div></div>
+    <div class="service-card"><div class="service-num">01 — Payroll Tax &amp; Strategic Advisory</div><div class="service-title">Complexity Managed. Risk Reduced.</div><div class="service-price">$8,000–$15,000/month</div><div class="service-body">Multi-jurisdictional reconciliations, notice resolution, audit readiness, and compliance strategy aligned with your growth trajectory. For companies where payroll tax complexity is a real risk.</div></div>
+    <div class="service-card"><div class="service-num">02 — Compliance &amp; Workforce Risk</div><div class="service-title">Compliance as Competitive Advantage</div><div class="service-price">$2,000–$5,000/month</div><div class="service-body">Payroll tax, multi-state requirements, HR integration, and workforce risk management. ADP, SAP, and Oracle fluent. Built for organizations managing complexity across jurisdictions.</div></div>
+    <div class="service-card"><div class="service-num">03 — Operational Excellence &amp; Scaling</div><div class="service-title">Build the Machine Behind the Business</div><div class="service-price">Starting at $3,500</div><div class="service-body">Operational audits, SOP development, team structure design, financial oversight, and strategic planning infrastructure that lets leadership move fast without breaking things.</div></div>
+    <div class="service-card"><div class="service-num">04 — Creator Business Advisory</div><div class="service-title">Your Platform Is a Business. Run It Like One.</div><div class="service-price">$500–$1,500/month</div><div class="service-body">Business structuring, payment frameworks, contract navigation, tax strategy, and operational systems for content creators and digital entrepreneurs ready to scale.</div></div>
+  </div>
+
+  <div class="brochure-cta">
+    <div class="brochure-cta-text">
+      <div class="brochure-cta-title">Looking for the full service menu?</div>
+      <div class="brochure-cta-sub">Download our services brochure for a complete overview of all 8 WCG engagements — including Startup Launch, Payroll Processing, Business Development Strategy, and Enterprise Advisory.</div>
+    </div>
+    <a href="WCG_Services_Brochure.pdf" download class="btn-download">&#8595; Download Services Brochure</a>
   </div>
 </div></div>
 
