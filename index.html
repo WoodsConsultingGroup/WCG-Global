@@ -36,6 +36,11 @@
     .tagline-bar { background: var(--navy); padding: 1rem 2rem; display: flex; align-items: center; justify-content: center; gap: 2.5rem; }
     .tagline-item { font-size: 11px; color: var(--gold); letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; }
     .tagline-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); opacity: 0.45; }
+    .promo-bar { background: var(--gold); padding: 0.7rem 1.5rem; text-align: center; }
+    .promo-bar-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; }
+    .promo-bar-text { font-size: 13px; font-weight: 500; color: var(--navy); }
+    .promo-bar-text strong { font-weight: 700; }
+    .promo-bar a { font-size: 12px; font-weight: 700; color: var(--navy); text-decoration: underline; white-space: nowrap; }
     .section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
     .section-label { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; color: var(--gold); text-transform: uppercase; margin-bottom: 0.75rem; }
     h2 { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 600; color: var(--navy); line-height: 1.2; margin-bottom: 1rem; }
@@ -135,6 +140,13 @@
 </head>
 <body>
 
+<div class="promo-bar">
+  <div class="promo-bar-inner">
+    <div class="promo-bar-text">🎉 <strong>Limited-Time Launch Offer:</strong> New clients save $750 flat on any first engagement — book by September 30.</div>
+    <a href="#contact">Claim Your Spot →</a>
+  </div>
+</div>
+
 <nav>
   <a href="#" class="nav-logo">Woods Consulting <span>Group</span></a>
   <ul class="nav-links">
@@ -200,10 +212,13 @@
   <h2>We Meet You Where You Are. We Build What You Need.</h2>
   <p class="section-sub">Every engagement starts with where your business actually is — then we build what gets you to the next level.</p>
   <div class="services-grid">
-    <div class="service-card"><div class="service-num">01 — Payroll Tax &amp; Strategic Advisory</div><div class="service-title">Complexity Managed. Risk Reduced.</div><div class="service-price">$8,000–$15,000/month</div><div class="service-body">Multi-jurisdictional reconciliations, notice resolution, audit readiness, and compliance strategy aligned with your growth trajectory. For companies where payroll tax complexity is a real risk.</div></div>
-    <div class="service-card"><div class="service-num">02 — Compliance &amp; Workforce Risk</div><div class="service-title">Compliance as Competitive Advantage</div><div class="service-price">$2,000–$5,000/month</div><div class="service-body">Payroll tax, multi-state requirements, HR integration, and workforce risk management. ADP, SAP, and Oracle fluent. Built for organizations managing complexity across jurisdictions.</div></div>
-    <div class="service-card"><div class="service-num">03 — Operational Excellence &amp; Scaling</div><div class="service-title">Build the Machine Behind the Business</div><div class="service-price">Starting at $3,500</div><div class="service-body">Operational audits, SOP development, team structure design, financial oversight, and strategic planning infrastructure that lets leadership move fast without breaking things.</div></div>
+    <div class="service-card"><div class="service-num">01 — Payroll Tax Remediation &amp; Advisory</div><div class="service-title">When the IRS or State Comes Knocking</div><div class="service-price">$8,000–$15,000/month</div><div class="service-body">Active-risk resolution: notice response, penalty and lien negotiation, multi-entity audit readiness, and amended filings. For companies already facing enforcement, back tax exposure, or a compliance backlog.</div></div>
+    <div class="service-card"><div class="service-num">02 — Ongoing Compliance &amp; Workforce Risk</div><div class="service-title">Compliance as Competitive Advantage</div><div class="service-price">$2,000–$5,000/month</div><div class="service-body">Preventive, month-to-month oversight: multi-state employment requirements, worker classification, HR policy integration, and payroll governance (ADP, SAP, Oracle fluent) — built to keep growing organizations out of the situation Service 01 solves.</div></div>
+    <div class="service-card"><div class="service-num">03 — Operational Excellence &amp; Scaling</div><div class="service-title">Build the Machine Behind the Business</div><div class="service-price">Project-based, $5,000–$15,000+ (scope-dependent)</div><div class="service-body">Operational audits, SOP development, team structure design, financial oversight, and strategic planning infrastructure that lets leadership move fast without breaking things.</div></div>
     <div class="service-card"><div class="service-num">04 — Creator Business Advisory</div><div class="service-title">Your Platform Is a Business. Run It Like One.</div><div class="service-price">$500–$1,500/month</div><div class="service-body">Business structuring, payment frameworks, contract navigation, tax strategy, and operational systems for content creators and digital entrepreneurs ready to scale.</div></div>
+    <div class="service-card"><div class="service-num">05 — Government Contracting Readiness</div><div class="service-title">From Registration to Ready to Bid</div><div class="service-price">$2,000–$6,000 flat &nbsp;·&nbsp; Bid support from $750/month</div><div class="service-body">SAM.gov and state vendor portal registration, NAICS/commodity code selection, certification support, and capabilities statement development — plus ongoing bid monitoring for businesses ready to compete for public-sector contracts.</div></div>
+    <div class="service-card"><div class="service-num">06 — Home Care Agency (HCA) Division</div><div class="service-title">Licensed, Structured, Ready to Operate</div><div class="service-price">Starting at $6,500</div><div class="service-body">Full home care agency buildout: LLC structuring, state licensing and Medicaid provider enrollment, Policies &amp; Procedures Manual, caregiver compensation frameworks, and brand and marketing infrastructure — from launch through enrollment.</div></div>
+    <div class="service-card"><div class="service-num">07 — In-House Staffing &amp; Placement</div><div class="service-title">Vetted Talent, No Agency Markup</div><div class="service-price">FT placements from $80,000/year &nbsp;·&nbsp; Fee: 18–22% of first-year salary</div><div class="service-body">Direct and temporary placement drawing on WCG's own vetted staff pool — administrative, HR, payroll, and operations roles. Salary range depends on the requirement and skill set. Positioned as an in-house alternative to national agencies like Robert Half, whose fees typically run 20–35%.</div></div>
   </div>
 
   <div class="brochure-cta">
@@ -389,7 +404,7 @@
     <div>
       <div class="clarity-eyebrow">The First Step</div>
       <h2>Ready to Build Something That Lasts?</h2>
-      <p class="clarity-body">Whether you're launching your first business, breaking through a growth plateau, or leading a company through its next stage — WCG brings the strategy, the systems, and the expertise to get you there.</p>
+      <p class="clarity-body">Whether you're launching your first business, breaking through a growth plateau, or leading a company through its next stage — WCG brings the strategy, the systems, and the expertise to get you there. <strong>New clients save $750 flat on their first engagement — book by September 30.</strong></p>
       <a href="#contact" class="btn-gold">Book Your Clarity Call</a>
     </div>
     <div class="clarity-items">
@@ -429,12 +444,15 @@
         <option value="">Select a service</option>
         <option>Startup Launch Package — Starting at $1,500</option>
         <option>Business Development Strategy — $2,000–$3,500/mo</option>
-        <option>Operational Excellence &amp; Scaling — Starting at $3,500</option>
-        <option>Compliance &amp; Workforce Risk — $2,000–$5,000/mo</option>
-        <option>Payroll Tax &amp; Strategic Advisory — $8,000–$15,000/mo</option>
+        <option>Operational Excellence &amp; Scaling — $5,000–$15,000+</option>
+        <option>Ongoing Compliance &amp; Workforce Risk — $2,000–$5,000/mo</option>
+        <option>Payroll Tax Remediation &amp; Advisory — $8,000–$15,000/mo</option>
         <option>Payroll Processing — Starting at $400/mo + software</option>
         <option>Creator Business Advisory — $500–$1,500/mo</option>
         <option>Scale &amp; Optimize Enterprise — $7,500–$15,000/mo</option>
+        <option>Government Contracting Readiness — $2,000–$6,000</option>
+        <option>Home Care Agency (HCA) Division — Starting at $6,500</option>
+        <option>In-House Staffing &amp; Placement — FT from $80,000/yr</option>
         <option>Not sure — I need help figuring out what I need</option>
       </select>
     </div>
@@ -459,7 +477,7 @@
       </select>
     </div>
     <button type="submit" class="form-submit">Submit Clarity Call Request</button>
-    <p class="form-note">We respond to all inquiries within 24 business hours. Your information is never shared or sold.</p>
+    <p class="form-note">We respond to all inquiries within 24 business hours. Your information is never shared or sold.<br><strong>Mention this form to lock in your $750 launch discount — offer ends September 30.</strong></p>
   </form>
   <div class="success-msg" id="success-msg">
     <p><strong>Thank you — your Clarity Call request has been received.</strong><br>Ashley will reach out within 24 business hours to confirm your session. Look out for a message from info@wcg-global.com.</p>
